@@ -22,7 +22,20 @@
 	
 	<!--Contato-->
 	<div style="text-align: center;"><a title="" href="https://wa.me/5585994355338" target="_blank"><img alt="Jneudl4c o" src="https://images2.imgbox.com/cf/74/JnEudl4C_o.png" title="Fale com Raimundo de Segunda a Sexta das 8:00 às 20:00hs."></a>&nbsp;&nbsp;<span style="font-size: 1em;">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span>&nbsp;<a title="" href="https://wa.me/5573999564118" target="_blank" style="font-size: 1em;"><img alt="Jneudl4c o" src="https://images2.imgbox.com/cf/74/JnEudl4C_o.png" title="Fale com Altair de Segunda a Sexta das 8:00 às 20:00hs."></a><span style="font-size: 1em;">&nbsp;</span><div></div>
-  <br><br><br>  
+  <br><br><br>
+		
+	<!--Speed Vídeo Function-->
+	function feAdjustVideoPlaybackInFrame(frame, playbackRate) {
+  		var i;
+  		for (i=0; i<frame.frames.length; i++) {
+    		try {
+      		feAdjustVideoPlaybackInFrame(frame.frames[i], playbackRate);
+      		frame.frames[i].document.querySelector('video').playbackRate = playbackRate;
+    		}
+    		catch(e) {};
+  	}
+	}
+	feAdjustVideoPlaybackInFrame(window, 1.5);
 	
 	<!--Vídeo-->
 	<center><iframe width="860" height="484" src="https://www.youtube.com/embed/ybwjoDXVbh0" title="O #MELHOR #NEGÓCIO da #internet PARA você começar a trabalhar  #HOJE #MESMO a #partir de #sua #casa!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
