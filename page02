@@ -25,8 +25,21 @@
 	<!--Título-->
 	<div align="center">&nbsp;</div></div><div align="center"><b style="font-size: 1em;"><font size="2"></font></b></div></div><div style="text-align: center;"><b><font size="6"></font></b></div><div style="text-align: center;"><b><font size="6" color="#cc0000">URGENTE!!!</font></b></div><div style="text-align: center;"><font size="5">Assista esse Vídeo...</font></div><div style="text-align: center;"><font size="5"><br></font></div>
 	
+	<!--Speed Vídeo Function-->
+	function feAdjustVideoPlaybackInFrame(frame, playbackRate) {
+  		var i;
+  		for (i=0; i<frame.frames.length; i++) {
+    		try {
+      		feAdjustVideoPlaybackInFrame(frame.frames[i], playbackRate);
+      		frame.frames[i].document.querySelector('video').playbackRate = playbackRate;
+    		}
+    		catch(e) {};
+  	}
+	}
+	feAdjustVideoPlaybackInFrame(window, 1.5);
+	
 	<!--Vídeo-->
-	<center><iframe width="640" height="480" src="https://www.youtube.com/embed/WcgsaNLfJ28" title="#SABER #COMO #TER O #MELHOR #NEGÓCIO #HOJE #MESMO #NA #INTERNET, #A #PARTIR #DE #SUA #CASA!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+	<center><iframe width="860" height="484" src="https://www.youtube.com/embed/ybwjoDXVbh0" title="O #MELHOR #NEGÓCIO da #internet PARA você começar a trabalhar  #HOJE #MESMO a #partir de #sua #casa!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
 	
 	<!--Botão-->
 	<div style="text-align: center;"><a href="" title="" target="_blank" style="color: rgb(217, 0, 0); text-align: center;"><img src="https://i.picasion.com/pic92/2ba649f4c2c97e833f41db25a76c5790.gif" alt="Your image is loading..." style="font-size: 1em;"></a>
